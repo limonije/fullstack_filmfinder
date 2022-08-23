@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Film Finder</title>
+    <script defer src="variables.js"></script>
+    <script defer src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="parent">
+      <header>
+        <h1>Winc Film finder</h1>
+        <p>More info on the film?</p>
+        <p>Click on poster to link to IMDB page.</p>
+      </header>
+      <div class="search-widget">
+        <img class="search-icon" />
+        <input
+          type="search"
+          name="movie"
+          id="search"
+          placeholder="Type e.g. avengers and press Enter"
+        />
+      </div>
+      <nav>
+        <ul class="nav-top">
+          <li>
+            <input
+              type="radio" id="all-movies" name="movie" value="all-movies" checked/>
+            <label for="all-movies">All movies</label>
+          </li>
+          
+          <li>
+            <input
+              type="radio" id="new-movies" name="movie" value="new-movies"/>
+            <label for="new-movies">Latest movies, 2014 or newer</label>
+          </li>
+
+          <li>
+            <input type="radio" id="avengers" name="movie" value="avengers" />
+            <label for="avengers">Avengers movies</label>
+          </li>
+
+          <li>
+            <input type="radio" id="x-men" name="movie" value="x-men" />
+            <label for="x-men">X-Men movies</label>
+          </li>
+
+          <li>
+            <input type="radio" id="princess" name="movie" value="princess" />
+            <label for="princess">Princess movies</label>
+          </li>
+
+          <li>
+            <input type="radio" id="batman" name="movie" value="batman" />
+            <label for="batman">Batman movies</label>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="posters">
+          <ul id="poster-images">           
+          </ul>
+        </div>
+      </main>
+      <footer><p>&#169 2022 Winc Film Academy</p></footer>
+    </div>
+  </body>
+</html>
